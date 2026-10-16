@@ -14,10 +14,16 @@ A clean, modern, and responsive web-based calculator built with plain **HTML**, 
 
 ---
 
+## 🚀 Demo & Screenshots
+
+[![Live Demo](https://img.shields.io/badge/LiveDemo-0F172A?style=for-the-badge&logo=googlechrome&logoColor=38BDF8)](https://amazonclonebysavindu.netlify.app/)
+
+---
+
 ## 📂 Project Structure
 
 ```text
-├── calculator.html     # Main HTML structure
+├── index.html          # Main HTML structure
 ├── styles/
 │   └── style.css       # Layout, styling, and Flexbox centering
 └── scripts/
@@ -29,7 +35,7 @@ A clean, modern, and responsive web-based calculator built with plain **HTML**, 
 ## 🚀 Getting Started
 
 1. **Clone or Download** the repository to your local machine.
-2. Open `calculator.html` in any web browser (Chrome, Firefox, Safari, Edge).
+2. Open `index.html` in any web browser (Chrome, Firefox, Safari, Edge).
 3. Start calculating using either on-screen buttons or your computer keyboard!
 
 ---
