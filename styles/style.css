@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body {
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -10,39 +14,61 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 12px;
+  -webkit-text-size-adjust: 100%;
 }
 
 .calculating-area {
   background-color: rgb(20, 20, 20);
-  padding: 20px;
+  padding: clamp(14px, 4vw, 20px);
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
   text-align: center;
+  width: 100%;
+  max-width: 340px;
+}
+
+.calculating-area h3 {
+  margin-top: 0;
 }
 
 .result {
   font-family: Arial, sans-serif;
-  font-size: 30px;
+  font-size: clamp(22px, 7vw, 30px);
   min-height: 2rem;
   display: block;
   text-align: right;
   padding: 10px;
-  margin-bottom: 15px;
+  margin: 0 0 15px;
   background-color: #5e5e5e;
   border-radius: 8px;
+  overflow-x: auto;
+  overflow-wrap: anywhere;
+}
+
+.button-row {
+  display: flex;
+  gap: clamp(6px, 2vw, 10px);
+  margin: 0 0 clamp(6px, 2vw, 10px);
 }
 
 button {
   color: white;
   border: none;
   border-radius: 50px;
-  padding: 10px;
-  font-size: 20px;
-  width: 50px;
-  height: 50px;
-  margin-right: 3px;
+  padding: 0;
+  font-size: clamp(18px, 5.5vw, 22px);
+  flex: 1;
+  min-width: 0;
+  aspect-ratio: 1 / 1;
+  display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button:hover {
@@ -60,11 +86,13 @@ button:hover {
 
 .button3 {
   background-color: rgb(255, 0, 0);
-  font-size: 12px;
+  font-size: 14px;
+  aspect-ratio: auto;
+  height: clamp(44px, 12vw, 54px);
 }
 
 .button3 i {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .button3:hover {
