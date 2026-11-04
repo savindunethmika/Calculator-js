@@ -16,6 +16,7 @@ A clean, modern, and responsive web-based calculator built with plain **HTML**, 
 
 ## 🚀 Demo & Screenshots
 
+>   ![Project Preview](./preview.png)
 [![Live Demo](https://img.shields.io/badge/LiveDemo-0F172A?style=for-the-badge&logo=googlechrome&logoColor=38BDF8)](https://amazonclonebysavindu.netlify.app/)
 
 ---
